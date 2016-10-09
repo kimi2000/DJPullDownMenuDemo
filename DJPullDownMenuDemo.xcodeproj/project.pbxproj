@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09EA5A681DA8D31700D70A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A671DA8D31700D70A19 /* main.m */; };
+		09EA5A6B1DA8D31700D70A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A6A1DA8D31700D70A19 /* AppDelegate.m */; };
+		09EA5A6E1DA8D31700D70A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A6D1DA8D31700D70A19 /* ViewController.m */; };
+		09EA5A711DA8D31700D70A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA5A6F1DA8D31700D70A19 /* Main.storyboard */; };
+		09EA5A731DA8D31700D70A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09EA5A721DA8D31700D70A19 /* Assets.xcassets */; };
+		09EA5A761DA8D31700D70A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09EA5A741DA8D31700D70A19 /* LaunchScreen.storyboard */; };
+		09EA5A7F1DA8D3C100D70A19 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A7E1DA8D3C100D70A19 /* BaseViewController.m */; };
+		09EA5A821DA8D40E00D70A19 /* PullDownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A811DA8D40E00D70A19 /* PullDownMenuController.m */; };
+		09EA5A8A1DA8DB2D00D70A19 /* UIView+PullDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A891DA8DB2D00D70A19 /* UIView+PullDown.m */; };
+		09EA5A8E1DA8DBDA00D70A19 /* DJMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A8D1DA8DBDA00D70A19 /* DJMenuButton.m */; };
+		09EA5A911DA8DCB500D70A19 /* DJPullDowmMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A901DA8DCB500D70A19 /* DJPullDowmMenuView.m */; };
+		09EA5A971DA8EAD000D70A19 /* ShareMenuShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A961DA8EAD000D70A19 /* ShareMenuShowView.m */; };
+		09EA5A9A1DA8ECA700D70A19 /* ShareMenuShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA5A991DA8ECA700D70A19 /* ShareMenuShowCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09EA5A631DA8D31700D70A19 /* DJPullDownMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJPullDownMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09EA5A671DA8D31700D70A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09EA5A691DA8D31700D70A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09EA5A6A1DA8D31700D70A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09EA5A6C1DA8D31700D70A19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09EA5A6D1DA8D31700D70A19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09EA5A701DA8D31700D70A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09EA5A721DA8D31700D70A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09EA5A751DA8D31700D70A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09EA5A771DA8D31700D70A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EA5A7D1DA8D3C100D70A19 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		09EA5A7E1DA8D3C100D70A19 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		09EA5A801DA8D40E00D70A19 /* PullDownMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullDownMenuController.h; sourceTree = "<group>"; };
+		09EA5A811DA8D40E00D70A19 /* PullDownMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullDownMenuController.m; sourceTree = "<group>"; };
+		09EA5A841DA8D52400D70A19 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		09EA5A851DA8D56D00D70A19 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		09EA5A861DA8D59E00D70A19 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		09EA5A881DA8DB2D00D70A19 /* UIView+PullDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PullDown.h"; sourceTree = "<group>"; };
+		09EA5A891DA8DB2D00D70A19 /* UIView+PullDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PullDown.m"; sourceTree = "<group>"; };
+		09EA5A8C1DA8DBDA00D70A19 /* DJMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMenuButton.h; sourceTree = "<group>"; };
+		09EA5A8D1DA8DBDA00D70A19 /* DJMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMenuButton.m; sourceTree = "<group>"; };
+		09EA5A8F1DA8DCB500D70A19 /* DJPullDowmMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJPullDowmMenuView.h; sourceTree = "<group>"; };
+		09EA5A901DA8DCB500D70A19 /* DJPullDowmMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJPullDowmMenuView.m; sourceTree = "<group>"; };
+		09EA5A951DA8EAD000D70A19 /* ShareMenuShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareMenuShowView.h; sourceTree = "<group>"; };
+		09EA5A961DA8EAD000D70A19 /* ShareMenuShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareMenuShowView.m; sourceTree = "<group>"; };
+		09EA5A981DA8ECA700D70A19 /* ShareMenuShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareMenuShowCell.h; sourceTree = "<group>"; };
+		09EA5A991DA8ECA700D70A19 /* ShareMenuShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareMenuShowCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09EA5A601DA8D31700D70A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09EA5A5A1DA8D31700D70A19 = {
+			isa = PBXGroup;
+			children = (
+				09EA5A651DA8D31700D70A19 /* DJPullDownMenuDemo */,
+				09EA5A641DA8D31700D70A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09EA5A641DA8D31700D70A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A631DA8D31700D70A19 /* DJPullDownMenuDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09EA5A651DA8D31700D70A19 /* DJPullDownMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A691DA8D31700D70A19 /* AppDelegate.h */,
+				09EA5A6A1DA8D31700D70A19 /* AppDelegate.m */,
+				09EA5A6C1DA8D31700D70A19 /* ViewController.h */,
+				09EA5A6D1DA8D31700D70A19 /* ViewController.m */,
+				09EA5A7D1DA8D3C100D70A19 /* BaseViewController.h */,
+				09EA5A7E1DA8D3C100D70A19 /* BaseViewController.m */,
+				09EA5A801DA8D40E00D70A19 /* PullDownMenuController.h */,
+				09EA5A811DA8D40E00D70A19 /* PullDownMenuController.m */,
+				09EA5A941DA8EA9000D70A19 /* ShareMenuShowView */,
+				09EA5A921DA8E67900D70A19 /* PullDowmMenuView */,
+				09EA5A831DA8D50500D70A19 /* other */,
+				09EA5A6F1DA8D31700D70A19 /* Main.storyboard */,
+				09EA5A721DA8D31700D70A19 /* Assets.xcassets */,
+				09EA5A741DA8D31700D70A19 /* LaunchScreen.storyboard */,
+				09EA5A771DA8D31700D70A19 /* Info.plist */,
+				09EA5A661DA8D31700D70A19 /* Supporting Files */,
+			);
+			path = DJPullDownMenuDemo;
+			sourceTree = "<group>";
+		};
+		09EA5A661DA8D31700D70A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A671DA8D31700D70A19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09EA5A831DA8D50500D70A19 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A8B1DA8DBB600D70A19 /* MenuButton */,
+				09EA5A871DA8DAFA00D70A19 /* Category */,
+				09EA5A841DA8D52400D70A19 /* Header.h */,
+				09EA5A851DA8D56D00D70A19 /* Macro.h */,
+				09EA5A861DA8D59E00D70A19 /* PrefixHeader.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		09EA5A871DA8DAFA00D70A19 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A881DA8DB2D00D70A19 /* UIView+PullDown.h */,
+				09EA5A891DA8DB2D00D70A19 /* UIView+PullDown.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		09EA5A8B1DA8DBB600D70A19 /* MenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A8C1DA8DBDA00D70A19 /* DJMenuButton.h */,
+				09EA5A8D1DA8DBDA00D70A19 /* DJMenuButton.m */,
+			);
+			path = MenuButton;
+			sourceTree = "<group>";
+		};
+		09EA5A921DA8E67900D70A19 /* PullDowmMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A8F1DA8DCB500D70A19 /* DJPullDowmMenuView.h */,
+				09EA5A901DA8DCB500D70A19 /* DJPullDowmMenuView.m */,
+			);
+			name = PullDowmMenuView;
+			sourceTree = "<group>";
+		};
+		09EA5A941DA8EA9000D70A19 /* ShareMenuShowView */ = {
+			isa = PBXGroup;
+			children = (
+				09EA5A951DA8EAD000D70A19 /* ShareMenuShowView.h */,
+				09EA5A961DA8EAD000D70A19 /* ShareMenuShowView.m */,
+				09EA5A981DA8ECA700D70A19 /* ShareMenuShowCell.h */,
+				09EA5A991DA8ECA700D70A19 /* ShareMenuShowCell.m */,
+			);
+			name = ShareMenuShowView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09EA5A621DA8D31700D70A19 /* DJPullDownMenuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09EA5A7A1DA8D31700D70A19 /* Build configuration list for PBXNativeTarget "DJPullDownMenuDemo" */;
+			buildPhases = (
+				09EA5A5F1DA8D31700D70A19 /* Sources */,
+				09EA5A601DA8D31700D70A19 /* Frameworks */,
+				09EA5A611DA8D31700D70A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJPullDownMenuDemo;
+			productName = DJPullDownMenuDemo;
+			productReference = 09EA5A631DA8D31700D70A19 /* DJPullDownMenuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09EA5A5B1DA8D31700D70A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JSMD;
+				TargetAttributes = {
+					09EA5A621DA8D31700D70A19 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 09EA5A5E1DA8D31700D70A19 /* Build configuration list for PBXProject "DJPullDownMenuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09EA5A5A1DA8D31700D70A19;
+			productRefGroup = 09EA5A641DA8D31700D70A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09EA5A621DA8D31700D70A19 /* DJPullDownMenuDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09EA5A611DA8D31700D70A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EA5A761DA8D31700D70A19 /* LaunchScreen.storyboard in Resources */,
+				09EA5A731DA8D31700D70A19 /* Assets.xcassets in Resources */,
+				09EA5A711DA8D31700D70A19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09EA5A5F1DA8D31700D70A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EA5A6E1DA8D31700D70A19 /* ViewController.m in Sources */,
+				09EA5A9A1DA8ECA700D70A19 /* ShareMenuShowCell.m in Sources */,
+				09EA5A971DA8EAD000D70A19 /* ShareMenuShowView.m in Sources */,
+				09EA5A911DA8DCB500D70A19 /* DJPullDowmMenuView.m in Sources */,
+				09EA5A7F1DA8D3C100D70A19 /* BaseViewController.m in Sources */,
+				09EA5A6B1DA8D31700D70A19 /* AppDelegate.m in Sources */,
+				09EA5A8A1DA8DB2D00D70A19 /* UIView+PullDown.m in Sources */,
+				09EA5A821DA8D40E00D70A19 /* PullDownMenuController.m in Sources */,
+				09EA5A681DA8D31700D70A19 /* main.m in Sources */,
+				09EA5A8E1DA8DBDA00D70A19 /* DJMenuButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09EA5A6F1DA8D31700D70A19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EA5A701DA8D31700D70A19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09EA5A741DA8D31700D70A19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09EA5A751DA8D31700D70A19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09EA5A781DA8D31700D70A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09EA5A791DA8D31700D70A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09EA5A7B1DA8D31700D70A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJPullDownMenuDemo/other/PrefixHeader.pch";
+				INFOPLIST_FILE = DJPullDownMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSMD.DJPullDownMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09EA5A7C1DA8D31700D70A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DJPullDownMenuDemo/other/PrefixHeader.pch";
+				INFOPLIST_FILE = DJPullDownMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JSMD.DJPullDownMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09EA5A5E1DA8D31700D70A19 /* Build configuration list for PBXProject "DJPullDownMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EA5A781DA8D31700D70A19 /* Debug */,
+				09EA5A791DA8D31700D70A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09EA5A7A1DA8D31700D70A19 /* Build configuration list for PBXNativeTarget "DJPullDownMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09EA5A7B1DA8D31700D70A19 /* Debug */,
+				09EA5A7C1DA8D31700D70A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09EA5A5B1DA8D31700D70A19 /* Project object */;
+}
