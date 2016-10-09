@@ -11,19 +11,19 @@
 @interface ShareMenuShowView : UIView <UITableViewDelegate,UITableViewDataSource>
 
 @property (assign, nonatomic) CGPoint showPoint;
-@property (strong, nonatomic) NSArray *items;
+@property (copy, nonatomic) NSArray *items;
 @property (strong, nonatomic) UITableView *myTabelView;
 @property (assign, nonatomic) CGRect originalRect;
-@property (strong, nonatomic) NSMutableSet *choseSet;
+@property (copy, nonatomic) NSMutableSet *choseSet;
 
 
 - (id)initWithFrame:(CGRect)frame items:(NSArray <NSString *> *)items showPoint:(CGPoint)showPoint;
 
-@property (strong, nonatomic) UIColor *sq_selectColor; //选后的颜色
-@property (strong, nonatomic) UIColor *sq_backGroundColor;
-@property (copy, nonatomic) void(^selectBlock)(ShareMenuShowView *view, NSInteger index);
+@property (retain, nonatomic) UIColor *selectColor; //选后的颜色
+@property (retain, nonatomic) UIColor *backGroundColor;
+@property (retain, nonatomic) UIColor *itemTextColor;
 
-@property (copy, nonatomic) UIColor *itemTextColor;
+@property (copy, nonatomic) void(^selectBlock)(ShareMenuShowView *view, NSInteger index);
 
 - (void)selectBlock:(void(^)(ShareMenuShowView *view, NSInteger index))block;
 

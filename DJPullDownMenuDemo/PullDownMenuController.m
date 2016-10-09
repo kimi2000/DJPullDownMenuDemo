@@ -11,6 +11,8 @@
 @implementation PullDownMenuController
 {
     NSArray *_itemsArray;
+    NSArray *_titleNameArray;
+    
     UILabel *_showLabel;
 }
 - (void)viewDidLoad {
@@ -47,8 +49,8 @@
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:self
                                                                             action:@selector(share)];
-    
     __weak typeof(self) weakSelf = self;
+    
     [self.menuShowView selectBlock:^(ShareMenuShowView *view, NSInteger index) {
         weakSelf.isShow = NO;
 //        NSLog(@"点击 %@",_itemsArray[index]);
@@ -80,8 +82,9 @@
 }
 
 #pragma mark - 展示下拉菜单
--(void)showDownList{
-    __weak typeof(self)weakSelf=self;
+-(void)showDownList {
+    
+    __weak typeof(self)weakSelf = self;
     
     if (!_menu) {
         [_menuButton setImage:[UIImage imageNamed:@"标签-向上箭头"] forState:UIControlStateNormal];
@@ -129,10 +132,10 @@
     if (_menu) {
         
         [_menu dismissWithCompletion:nil];//点击完成后视图消失;
-        
     }
     
     _isShow = NO;
+    
     [self.menuShowView dismissView];
 }
 
@@ -146,7 +149,8 @@
     _menuShowView = [[ShareMenuShowView alloc]initWithFrame:(CGRect){SCREEN_WIDTH-itemWidth-10,TopBarHeight+5,itemWidth,0}
                                                items:_itemsArray
                                            showPoint:(CGPoint){SCREEN_WIDTH-25,10}];
-    _menuShowView.sq_backGroundColor = [UIColor whiteColor];
+    _menuShowView.backGroundColor = [UIColor whiteColor];
+    _menuShowView.itemTextColor = TextColor;
     [self.view addSubview:_menuShowView];
     return _menuShowView;
 }

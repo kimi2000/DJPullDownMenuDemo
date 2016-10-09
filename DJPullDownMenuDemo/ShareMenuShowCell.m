@@ -34,7 +34,6 @@
 - (void)setLable:(UILabel *)lable{
     lable.font = [UIFont systemFontOfSize:14];
     lable.textAlignment = NSTextAlignmentCenter;
-    lable.textColor = TextColor;
 //    lable.backgroundColor = DJRandomColor;
 }
 

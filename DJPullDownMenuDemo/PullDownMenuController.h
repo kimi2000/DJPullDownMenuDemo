@@ -14,7 +14,6 @@
 @interface PullDownMenuController : UIViewController <DJPullDowmMenuViewDelegate>
 
 @property (nonatomic,strong) DJPullDowmMenuView *menu;
-@property (nonatomic,strong) NSArray *titleNameArray;
 @property (nonatomic,strong) DJMenuButton *menuButton;
 
 @property (nonatomic,strong) ShareMenuShowView *menuShowView;

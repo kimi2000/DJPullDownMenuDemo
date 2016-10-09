@@ -10,7 +10,7 @@
 
 @implementation DJPullDowmMenuView
 #pragma mark--自定义下拉菜单
--(instancetype)initWithNameArray:(NSArray *)nameArray andMenuOrigin:(CGPoint)orign andMenuWidth:(CGFloat)width andHeight:(CGFloat)rowHeight andLayer:(CGFloat)layer andTableViewBackGroundColor:(UIColor *)color andIsSharp:(BOOL)sharp andType:(popType)poptype{
+- (instancetype)initWithNameArray:(NSArray *)nameArray andMenuOrigin:(CGPoint)orign andMenuWidth:(CGFloat)width andHeight:(CGFloat)rowHeight andLayer:(CGFloat)layer andTableViewBackGroundColor:(UIColor *)color andIsSharp:(BOOL)sharp andType:(popType)poptype{
     self=[super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) ];
     if (self) {
         
@@ -51,7 +51,7 @@
 }
 
 #pragma mark--tableView代理方法
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
     cell.backgroundColor=[UIColor clearColor];
     cell.textLabel.textColor=COLOR(109, 109, 109);
@@ -62,11 +62,11 @@
     return cell;
     
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _nameArray.count;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     if ([self.tableViewDelegate respondsToSelector:@selector(tableViewDidSelectRowAtIndexPath: andPopType:)]) {
         [self.tableViewDelegate tableViewDidSelectRowAtIndexPath:indexPath andPopType:_popViewType];
@@ -74,7 +74,7 @@
 }
 
 #pragma mark--消失事件
--(void)dismissWithCompletion:(void (^)(DJPullDowmMenuView *))completion{
+- (void)dismissWithCompletion:(void (^)(DJPullDowmMenuView *))completion{
     __weak typeof(self)weakSelf=self;
     [UIView animateWithDuration:0.1 animations:^{
         weakSelf.menuTableView.frame=CGRectMake(_orign.x, _orign.y, _width, 0);
@@ -85,6 +85,5 @@
         }
     }];
 }
-
 
 @end

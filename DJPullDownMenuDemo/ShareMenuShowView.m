@@ -9,6 +9,8 @@
 #import "ShareMenuShowView.h"
 #import "ShareMenuShowCell.h"
 
+#define MenuShowCell @"MenuShowCell"
+
 @implementation ShareMenuShowView
 
 - (id)initWithFrame:(CGRect)frame items:(NSArray<NSString *> *)items showPoint:(CGPoint)showPoint{
@@ -42,14 +44,14 @@
     return _choseSet;
 }
 
-- (void)setSq_selectColor:(UIColor *)sq_selectColor{
-    _sq_selectColor = sq_selectColor;
+- (void)setSq_selectColor:(UIColor *)selectColor{
+    _selectColor = selectColor;
     [self.myTabelView reloadData];
 }
 
-- (void)setSq_backGroundColor:(UIColor *)sq_backGroundColor{
-    _sq_backGroundColor = sq_backGroundColor;
-    self.myTabelView.backgroundColor = _sq_backGroundColor;
+- (void)setSq_backGroundColor:(UIColor *)backGroundColor{
+    _backGroundColor = backGroundColor;
+    self.myTabelView.backgroundColor = backGroundColor;
 }
 
 - (void)setItemTextColor:(UIColor *)itemTextColor{
@@ -77,7 +79,7 @@
     _myTabelView.frame = (CGRect){0,triangleWith-5,self.frame.size.width,self.frame.size.height-(triangleWith-5)};
     [self addSubview:_myTabelView];
     
-    [_myTabelView registerClass:[ShareMenuShowCell class] forCellReuseIdentifier:@"MenuShowCell"];
+    [_myTabelView registerClass:[ShareMenuShowCell class] forCellReuseIdentifier:MenuShowCell];
     
     return _myTabelView;
 }
@@ -86,10 +88,9 @@
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    ShareMenuShowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MenuShowCell" forIndexPath:indexPath];
+    ShareMenuShowCell *cell = [tableView dequeueReusableCellWithIdentifier:MenuShowCell forIndexPath:indexPath];
     
     cell.textTitle.text = self.items[indexPath.row];
-
     cell.textTitle.textColor = _itemTextColor;
     
     if ([self.choseSet containsObject:@(indexPath.row)]) {
@@ -150,28 +151,20 @@
 
 #pragma mark 绘制三角形
 - (void)drawRect:(CGRect)rect
-
 {
     // 设置背景色
     [[UIColor whiteColor] set];
     //拿到当前视图准备好的画板
-    
     CGContextRef  context = UIGraphicsGetCurrentContext();
-    
     //利用path进行绘制三角形
-    
     CGContextBeginPath(context);//标记
     CGPoint locationPoint = CGPointMake(self.showPoint.x - self.originalRect.origin.x, 0);
     CGPoint leftPoint     = CGPointMake(self.showPoint.x - self.originalRect.origin.x-triangleWith/2, triangleWith-5);
     CGPoint rightPoint    = CGPointMake(self.showPoint.x - self.originalRect.origin.x+triangleWith/2, triangleWith-5);
     
-    
     CGContextMoveToPoint(context,locationPoint.x,locationPoint.y);//设置起点
-    
     CGContextAddLineToPoint(context,leftPoint.x ,  leftPoint.y);
-    
     CGContextAddLineToPoint(context,rightPoint.x, rightPoint.y);
-    
     CGContextClosePath(context);//路径结束标志，不写默认封闭
     
     UIColor * clor = self.myTabelView.backgroundColor;
@@ -180,12 +173,10 @@
     [clor setStroke]; //设置边框颜色
     
     CGContextDrawPath(context,kCGPathFillStroke);//绘制路径path
-    
 }
 
 - (void)selectBlock:(void (^)(ShareMenuShowView *, NSInteger))block{
     self.selectBlock = block;
 }
-
 
 @end
